@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AiCore API for educational purposes, built with FastAPI">
+    <meta name="author" content="Ivan Ying">
+
+    <title>Ai Core Celebrity DOB</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="/static/theme.css" rel="stylesheet">
+    <link href="/static/docs.css" rel="stylesheet">
+</head>
+
+    <img src="/static/ai_core.png" style="float: left; max-width: 84px; margin-right: 20px;" alt="">
+
+    <h1><span class="font-semi-bold">Celebrity DOB Service</span>
+    </h1>
+
+    <p class="lead">
+        The <a href="https://portal.theaicore.com/">Ai Core</a> Celebrity DOB service.<br>
+        <br>
+    </p>
+    <h2>{{ value }}</h2>
+    {% for i in loop_val %}
+    <h2>{{i}}</h2>
+    {% endfor %}
+
